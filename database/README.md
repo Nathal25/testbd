@@ -19,7 +19,17 @@ Add lines to copy files into container:
 
 ## 3. BUild database image
 
+inside database folder:
 
+```
+docker build -t japeto/project . 
+```
+
+## 4. Run server with postges
+
+```
+docker run --name project -p 5432:5432 -e POSTGRES_PASSWORD=aP4asw0rd japeto/project
+```
 
 ##Run integrate with dockercompose
 
