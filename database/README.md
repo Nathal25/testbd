@@ -22,13 +22,13 @@ Add lines to copy files into container:
 inside database folder:
 
 ```
-docker build -t japeto/project . 
+docker build -t testbd/project . 
 ```
 
 ## 4. Run server with postges
 
 ```
-docker run --name project -p 5432:5432 -e POSTGRES_PASSWORD=aP4asw0rd japeto/project
+docker run --name project -p 5432:5432 -e POSTGRES_PASSWORD=aP4asw0rd testbd/project
 ```
 
 ##Run integrate with dockercompose
